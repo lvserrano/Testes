@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "calculadora-margem"
+version = "0.1.0"
+description = ""
+authors = ["Levi Serrano <lvserrano@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.14"
+pyside6 = "^6.8.1"
+streamlit = "^1.41.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^6.11.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
