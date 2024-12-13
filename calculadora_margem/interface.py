@@ -18,6 +18,9 @@ def calcular_preco_venda(preco_minimo, markdown):
         preco_venda = preco_minimo / (1 - markdown / 100)
         lucro_liquido = preco_venda - preco_minimo
 
+        # Calcula o Markup
+        markup = lucro_liquido / preco_minimo
+
         # Exibindo os resultados com formatação
         resultado = f"""
         {aviso}
@@ -27,6 +30,9 @@ def calcular_preco_venda(preco_minimo, markdown):
         
         **Lucro Líquido:**
         💰 R$ {lucro_liquido:,.2f}
+        
+        **Markup:**
+        📊 {markup:,.2f} (ou {markup*100:,.2f}% sobre o preço mínimo)
         """
         return resultado
 
